@@ -6,9 +6,9 @@ import "./SearchResultsList.css";
 //  return console.log(Object.values(results));
         return  ( <>
             <div className="results-list">
-                {Object.values(results).map((result, fdcID) => {
+                {Object.values(results).map((foods, fdcId) => {
                     return <>
-                    <SearchResult result={result} key={fdcID} />;
+                    <SearchResult result={foods} key={fdcId} />;
                     </>
                     })}
             </div>
